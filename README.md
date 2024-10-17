@@ -1,8 +1,8 @@
-# [HyperPalette](https://hyperpalettes.vercel.app)
-
-
+# HyperPalette
 
 **HyperPalette** é uma ferramenta de geração de paletas de cores que utiliza a API **The Color API** para criar paletas de forma rápida e fácil. Os usuários podem escolher diferentes modos de geração de paletas, como **Monocromático**, **Analógico** e **Complementar**.
+
+[![Abrir HyperPalette](https://img.shields.io/badge/Abrir%20HyperPalette-Visitar-blue)](https://hyperpalettes.vercel.app/)
 
 ## Funcionalidades
 
