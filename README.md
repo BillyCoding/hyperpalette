@@ -1,27 +1,65 @@
-# AngularColorPallete
+# HyperPalette
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+**HyperPalette** é uma ferramenta de geração de paletas de cores que utiliza a API **The Color API** para criar paletas de forma rápida e fácil. Os usuários podem escolher diferentes modos de geração de paletas, como **Monocromático**, **Analógico** e **Complementar**.
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Geração de paletas de cores dinâmicas com integração à [The Color API](https://www.thecolorapi.com).
+- Suporte a diferentes modos de cores, como:
+  - **Monocromático**
+  - **Analógico**
+  - **Complementar**
+- Interface simples e minimalista, focada na usabilidade.
+- Exibição de códigos hexadecimais de cada cor gerada.
+- Botão para gerar novas paletas rapidamente.
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular 18**: Framework utilizado para construir a interface da aplicação.
+- **Tailwind CSS**: Para estilização rápida e eficiente.
+- **The Color API**: Para gerar paletas de cores dinamicamente.
 
-## Build
+## Como Usar
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/seu-usuario/hyperpalette.git
+   ```
+2. **Instale as dependências**:
+   ```bash
+   cd hyperpalette
+   npm install
+   ```
+3. **Inicie o servidor de desenvolvimento**:
 
-## Running unit tests
+   ```bash
+   ng serve
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Acesse a aplicação em `http://localhost:4200` no seu navegador.
 
-## Running end-to-end tests
+## Estrutura do Projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- `src/app/app.component.ts`: Componente principal que gerencia a integração com a API, manipulação dos modos de cores e renderização das paletas.
+- `src/app/color-scheme.interface.ts`: Definições de tipagem para os dados recebidos da API.
+- `src/assets/styles.css`: Estilos gerais da aplicação com Tailwind CSS.
 
-## Further help
+## Como Funciona
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+A aplicação envia requisições para **The Color API** e, com base na cor base e no modo selecionado, gera uma nova paleta de cores. Os usuários podem alternar entre modos de cores, como **monocromático**, **analógico** e **complementar**, para ver diferentes combinações de paletas. As cores são exibidas na tela com seu respectivo código hexadecimal, permitindo que os usuários as copiem facilmente.
+
+## Exemplo de Uso
+
+Abaixo está uma captura de tela da interface da aplicação:
+
+![HyperPalette Screenshot](./public/print.png)
+
+## Melhorias Futuras
+
+- Adicionar mais modos de geração de paletas (como triádico, quadricromático).
+- Opção de salvar paletas geradas.
+- Integração com outras APIs de cores para maior variedade de opções.
+
+## Licença
+
+Este projeto está licenciado sob a **MIT License**.
